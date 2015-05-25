@@ -15,6 +15,8 @@ curl_setopt_array($ch, array(
   CURLOPT_HTTPAUTH => CURLAUTH_BASIC,
   CURLOPT_USERPWD => $user.":".$pass,
 //  CURLOPT_VERBOSE => true
+ 
+  CURLOPT_RETURNTRANSFER => true // to actually receive the content from the exec, otherwise, it receive true to say the call worked
 
 ));
 
